@@ -1,2 +1,2 @@
 # Hello_World
-Send your first codes in different languages
+Send your codes in different languages for Hacktober'18
