@@ -5,8 +5,8 @@ using namespace std;
 
 int main(void) {
    int x,n;
-   for (n=1; n<=10000000; n++)
-   {
+    
+   cin>>n;
 
 
    x=2;
@@ -24,6 +24,6 @@ int main(void) {
             x=x+1;
 
    };
-   }
+   
    return 0;
 }
