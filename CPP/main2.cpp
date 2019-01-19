@@ -1,19 +1,19 @@
-#include <iostream>
+#include<iostream>
 using namespace std;
-int main(){
-    int n;
+
+int main()
+{
+    int i,j,k,n;
     cin>>n;
-    int a[100];
-    for (int i = 0; i<n; i++){
-        cin>>a[i];
-    }
-    for (int i = 0; i<n; i++){
-        for (int j = i; j<n; j++){
-                for (int k = i; k<=j; k++){
-                    cout<<a[k]<<" ";
-                }
-            cout<<endl;
+    for (i=1;i<=n;i++){
+         for (k=n;k>=i;k--){
+                cout<<" ";
+            }
+
+        for (j=65;j<=i+64;j++){
+                 cout<<" "<<char(j);
         }
+
+        cout<<endl;
     }
-    return 0;
 }

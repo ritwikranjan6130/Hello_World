@@ -1,12 +1,23 @@
 #include <iostream>
+#include <string>
+
 using namespace std;
-int main(){
-    int maximum = 0;
-    int a[10]={0};
-    for (int i = 0; i<=9; i++){
-        cin>>a[i];
-        maximum = (a[i]>=maximum)?a[i]:maximum;
+
+int main() {
+    long signed int N,X = 0,Su = 0;
+
+    cin>>N;
+    string S;
+    for(int i = 0; i <= N; i++){
+        char alpha[500];
+        cin.getline(alpha,500);
+        S = S + alpha;
     }
-    cout<<maximum;
+    for(int j= 1; j<=N*500; j++){
+        X=int(S[j]);
+        Su = Su + X;
+    }
+    cout<<Su<<S;
     return 0;
 }
+

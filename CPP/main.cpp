@@ -1,25 +1,23 @@
-#include <iostream>
+#include<iostream>
 
 using namespace std;
 
-int factorial(int num){
-    int fact = 1;
-    for(int i = 1; i <= num; i++){
-        fact = fact * i;
+int main() {
+    int n;
+    cin>>n;
+    for (int i = 1; i <= n; i++){
+        for (int k=n; k>i; k--){
+            cout<<" ";
+        }
+        for (int j = 1; j <= n; j++){
+            if (i==1||j==1||i==n||j==n){
+                cout<<"*";
+            }
+            else{
+                cout<<" ";
+            }
+        }
+        cout<<endl;
     }
-    return fact;
-}
-int ncr(int n, int r){
-    int nfact = factorial(n);
-    int rfact = factorial(r);
-    int nrfact = factorial(n - r);
-    int ans = nfact/(rfact*nrfact);
-    return ans;
-}
-
-int main()
-{
-    cout << "Hello world!" << endl;
-    cout << ncr(5,3);
-    return 0;
+	return 0;
 }
