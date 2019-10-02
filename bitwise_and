@@ -1,0 +1,9 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int a = 5;
+	//to check whether number is odd using bitwise operator
+	int x = a&1 ? 0 : 1;
+	cout<<x;
+}
